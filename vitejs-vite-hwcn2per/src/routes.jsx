@@ -1,5 +1,4 @@
-
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 
 import Home from './pages/Home';
 import Sobre from './pages/Sobre';
@@ -9,9 +8,7 @@ import Page404 from './pages/Page404';
 
 function AppRoutes() {
   return (
-    <BrowserRouter
-      basename={import.meta.env.BASE_URL.replace(/\/$/, '')}
-    >
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<Sobre />} />
@@ -19,7 +16,7 @@ function AppRoutes() {
         <Route path="/contatos" element={<Contatos />} />
         <Route path="*" element={<Page404 />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
