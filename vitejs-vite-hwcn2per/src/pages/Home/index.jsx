@@ -15,7 +15,7 @@ function Home() {
           <div className={styles.apresentacao}>
             <p>
               Olá, somos <br />
-              <span>Gabriel Ferreira e Ueliton</span> <br />
+              <span>Gabriel Ferreira e Matheus Gervasio</span> <br />
               Devs Full Stack
             </p>
 
