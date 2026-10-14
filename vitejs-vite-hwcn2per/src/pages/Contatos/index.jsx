@@ -1,0 +1,17 @@
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+
+function Contatos() {
+  return (
+    <>
+      <Header />
+      <main>
+        <h1>Contatos</h1>
+        <p>Entre em contato conosco!</p>
+      </main>
+      <Footer />
+    </>
+  );
+}
+
+export default Contatos;
